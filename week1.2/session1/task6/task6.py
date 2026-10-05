@@ -8,3 +8,8 @@ from pprint import pprint
 # Pretty-print the data structure
 
 # Display details of one album recorded by a specific artist
+
+
+
+#the function len() tells you the length of the data structure. works with lists, sets, tuples and dictionaries! also, for dictionaries, it would be the number of key value pairs. so "london:thames" would be one, not two
+# min() and max() tell you the highest and lowest value within the list or set or whatever 
