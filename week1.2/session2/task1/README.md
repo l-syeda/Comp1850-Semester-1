@@ -15,3 +15,9 @@
    ```
 
 3. Press `Ctrl+D` to exit the interpreter.
+
+
+# --------
+a = 0.15 + 0.15
+b = 0.1 + 0.2
+a == b   #this would print false! :O  
