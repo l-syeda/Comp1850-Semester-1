@@ -4,9 +4,19 @@
 
 # Ask a user to enter two numbers (one per input)
 
+try:    
+    number1 = int(input("Enter first number:"))
+    number2 = int(input("Enter second number:"))
+
+
 # multiply those numbers together
+    answer = number1*number2
+
 
 # print out the result
+    print(f"The product of your numbers is: {answer}!")
+except:
+    print("Invalid input")
 
 # There is an extra point available for validating that they entered numbers!
 # Add to your code so that if they entered something other than an integer it prints
