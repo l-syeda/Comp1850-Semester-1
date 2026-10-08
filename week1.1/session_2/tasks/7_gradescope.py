@@ -16,7 +16,7 @@ try:
 # print out the result
     print(f"The product of your numbers is: {answer}!")
 except:
-    print("Invalid input")
+    print("That is not a number.")
 
 # There is an extra point available for validating that they entered numbers!
 # Add to your code so that if they entered something other than an integer it prints
