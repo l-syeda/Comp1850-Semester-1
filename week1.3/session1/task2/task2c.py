@@ -11,7 +11,7 @@ with open('file_data.txt', 'r') as file:
         if not char: 
             break
 
-        print(char)
+        print(char) 
 
 # This example shows a common while-break pattern - reading from a file
 

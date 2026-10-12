@@ -8,5 +8,6 @@ while fruit:
 
 
 # Why does this work?
+#doesnt run forever because the list becomes empty when it loops through it..? 
 
 # What features of Python does it rely on?
