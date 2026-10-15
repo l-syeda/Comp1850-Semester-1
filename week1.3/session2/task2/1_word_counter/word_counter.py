@@ -4,6 +4,14 @@
 # You can use any of the .txt files to test this - or even make your own.
 
 # open and read the file
+filename = input("Enter filename: ")   #lowk confused 
+with open (filename, "r") as infile:
+    content = infile.read()
+
+words = content.split(" ")
+print(len(words))
+print(words)
+
 
 # calculate the number of words
 # hint: you could use .split() to break up by spaces
@@ -14,4 +22,4 @@
 # Here are the word counts you should get:
 # story.txt - 290
 # story2.txt - 326
-# glasses.txt - 210
+# glasses.txt - 210 
