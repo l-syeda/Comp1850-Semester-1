@@ -12,9 +12,9 @@ if UserInput.isdecimal():
     elif UserInput>=70 and UserInput<=100:
         print(f"{UserInput} is a Distinction!")
     else:
-        sys.exit("Error!")      
+        sys.exit("Error: Grade must be an integer between 0 and 100")      
 else:
-    sys.exit("Error!")
+    sys.exit("Error: Grade must be an integer between 0 and 100")
     
 
         
