@@ -1,4 +1,5 @@
 # Worksheet 1.2: Task 1 Solution
+import sys
 
 UserInput = input("Please enter an integer within the range 0-100: ")
 if UserInput.isdecimal():
@@ -11,11 +12,9 @@ if UserInput.isdecimal():
     elif UserInput>=70 and UserInput<=100:
         print(f"{UserInput} is a Distinction!")
     else:
-        print("Error: Grade must be an integer between 0 and 100")
-        exit()
+        sys.exit("Error!")      
 else:
-    print("Error: Grade must be an integer between 0 and 100")
-    exit()
+    sys.exit("Error!")
     
 
         
