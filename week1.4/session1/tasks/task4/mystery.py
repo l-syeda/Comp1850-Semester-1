@@ -11,6 +11,9 @@
 # function implementation
 
 def mystery_func(string):
+    """
+    input is a string data type 
+    """
     upper = 0
     lower = 0
 
@@ -20,6 +23,9 @@ def mystery_func(string):
         if ch.islower():
             lower += 1
     return (upper, lower)
+    """
+    return data type is an int?
+    """
 
 
 # testing
@@ -34,5 +40,5 @@ print(mystery_func("ABC"))
 # Uncomment the lines of code one by one and run the program
 # to see if you are right?
 
-# print(mystery_func("X"))
-# print(mystery_func("[2, 3]"))
+print(mystery_func("X"))
+print(mystery_func("[2, 3]"))
