@@ -9,8 +9,6 @@
     Name: Lobaba Syeda
 """
 
-import math
-
 def currency_converter(amount, from_currency, to_currency):
 
     conversion_rate = {
@@ -26,13 +24,13 @@ def currency_converter(amount, from_currency, to_currency):
     
     rate= conversion_rate[from_currency][to_currency]
     converted_rate = amount * rate 
-    
 
-    
-    return None
-
-
-
+    return round(converted_rate, 2)
 
 # Submit only this file currency_converter.py with the completed function.
 # Remove any additional code you may have added during development and testing.
+
+#testing:
+# print(currency_converter(101, 'GBP', 'CNY'))
+# print(currency_converter(100, 'CNY', 'GBP'))
+# print(currency_converter(50, 'PHP', 'INR'))
