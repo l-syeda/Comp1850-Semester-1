@@ -6,8 +6,10 @@
     other than any provided template code, was written and developed by
     you independently.
 
-    Name:
+    Name: Lobaba Syeda
 """
+
+import math
 
 def currency_converter(amount, from_currency, to_currency):
 
@@ -19,9 +21,18 @@ def currency_converter(amount, from_currency, to_currency):
     }
 
     # your code here
+    if amount<0:
+        return 0.0
+    
+    rate= conversion_rate[from_currency][to_currency]
+    converted_rate = amount * rate 
+    
 
+    
     return None
 
-# Submit only this file currency_converter.py with the completed function.
 
+
+
+# Submit only this file currency_converter.py with the completed function.
 # Remove any additional code you may have added during development and testing.
