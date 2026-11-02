@@ -43,4 +43,4 @@ class QuakeFeed:
         """
         with urlopen(self.url) as source:
             lines = [line.decode() for line in source]
-        return csv.DictReader(lines)
+        return csv.DictReader(lines) 

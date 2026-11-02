@@ -1,6 +1,7 @@
 # Week 1.6, Session 1: Task 5
 
 from datetime import datetime
+from logging import info
 
 from feed import QuakeFeed
 from quake import Quake
@@ -33,9 +34,20 @@ class QuakeDataset:
 
         The new data replaces any existing data.
         """
+
         # Write code here to replace existing data with new earthquake data.
         # Use the value returned by the feed's reader() method as the
         # subject of a for loop.
+
+        self.data.clear()  # Clear existing data before and data, and then we update the dataset with new data from the feed.
+        
+        for item in self.feed.reader():
+            time = datetime.fromisoformat(item['time'])
+            lon = float(item['longitude'])
+            lat = float(item['latitude'])
+            depth = float(item['depth'])
+            mag = float(item['mag'])
+            self.data.append(Quake(time, lon, lat, depth, mag))
 
         # Keep in mind that the items obtained by this for loop will be
         # dictionaries. You will need to extract the required values from
@@ -62,7 +74,7 @@ class QuakeDataset:
         if len(self.data) == 0:
             raise QuakeDatasetError("dataset is empty")
 
-        total = sum(quake.depth for quake in self.data)
+        total = sum(quake.depth for quake in self.data)    #this could be put in sqaure brackets to make it a list but dont need to apparently 
         return total / len(self.data)
 
     def mean_magnitude(self):
