@@ -27,4 +27,25 @@ class Person:
     # (see README.md for further details)
 
     def initials(self):
+        """Returns uppercase initials of person's name
+        """
+
+        initials = ""
+
+        for part in self.name.split():
+            initials += part[0]
+
+        return initials.upper()
+    
+
+    def is_birthday(self):
+         """Result is True if today is person's birthday, and False if not.
+         """
          
+         today =  date.today()
+
+         return today.day == self.birth.day and today.month == self.birth.month
+
+         
+
+
