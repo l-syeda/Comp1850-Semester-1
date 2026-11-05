@@ -10,7 +10,8 @@ class Person:
     # Write a constructor here to create and initialize name and
     # birth fields (see README.md for further details)
     def __init__(self,name,birth):
-
+        """Creates a person with a name and a date of birth.
+        """
 
         if not isinstance (name,str):
                 raise TypeError
