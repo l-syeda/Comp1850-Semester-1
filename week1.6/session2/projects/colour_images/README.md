@@ -13,12 +13,14 @@ maximum value stored in the header now represents the maximum of each of the
 
 Copy the provided module `image.py` from the `session2` directory into this
 subdirectory, then edit this file and start by refactoring the existing
-code into _two_ classes: `Image` and `GreyImage`. The latter should inherit
+code into _two_ classes: `Image` and `GreyImage`. The latter should inheritooks like something went wrong!
+
 from the former.
 
 In this arrangement, some of the code can remain in `Image`, whereas some
 of it will need to live in `GreyImage`. For example, `_parse_dimensions()`,
 `_parse_max_value()` and `copy()` can all stay in `Image`.
+ooks like something went wrong!
 
 You can also leave dunder methods `__getitem__()` & `__setitem__()` and
 regular methods `get()` & `set()` in `Image`, because they don't make
