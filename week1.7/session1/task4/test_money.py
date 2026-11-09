@@ -26,12 +26,16 @@ def test_add_invalid_type():
 def test_invalid_type_pence():
     # complete the test implementation for 
     # invalid type for pence
+    with pytest.raises(ValueError) as excinfo:
+        Money(1, 5.0)  #i did "0, 99" and teacher did this  
+    assert str(excinfo.value) == "pence must be an integer"
     
 
-def test_invalid_value_pence():
+def test_invalid_value_pence():   #teacher named it 'test_pence_too_small' instead i think
     # complete the test implementation for 
     # invalid value for pence
-    
+     with pytest.raises(ValueError):
+            Money(1, -1)
 
 def test_valid_add():
     # complete the test implementation for
