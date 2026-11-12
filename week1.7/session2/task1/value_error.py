@@ -4,5 +4,5 @@
 
 user_profile = {"username": "alice99", "role": "admin"}
 
-for key, value in user_profile:
-	print(f"{key} : {value}")
+for key, value in user_profile.items():   #error here cause we're iterating over a dictiionary instead of using 'items()'. we add '.items()'
+	print(f"{key} : {value}") 

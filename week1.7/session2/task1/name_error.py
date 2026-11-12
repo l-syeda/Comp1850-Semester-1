@@ -5,6 +5,7 @@
 expenses = [10, 20, 30]
 
 for amount in expenses:
+    total = 0
     total = total + amount  
 
-print(total)
+print(total) 
