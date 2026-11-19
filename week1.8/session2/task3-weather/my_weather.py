@@ -23,7 +23,7 @@ response = httpx.get(url)
 print(response.status_code)
 
 # json data
-data = response.json()
+data = response.json() 
 
 # raw data output
 print(data)

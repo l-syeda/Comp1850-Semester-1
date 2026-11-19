@@ -20,7 +20,7 @@ print(sum)
 #teacher did this instead
 sum = 0
 
-for k in range(2, 21, 2):    #icl idk why he did this range 
+for k in range(2, 21, 2):   
     sum = sum + k ** 2 
 print(sum)
 
